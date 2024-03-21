@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Pranav Senthilnathan",
+    "classifications": [ "Web" ],
+    "identity": "ReactTemplate",
+    "name": "React template ready to be integrated with WebApi",
+    "shortName": "ReactTemplate",
+    "sourceName": "ReactTemplate",
+    "tags": {
+        "language": "JavaScript",
+        "type": "project"
+    }
+}
