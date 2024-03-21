@@ -8,7 +8,10 @@
     <!-- Folder where production build objects will be placed -->
     <BuildOutputFolder>$(MSBuildProjectDirectory)\dist</BuildOutputFolder>
 
-    <!-- For demo purposes since this change hasn't been inserted yet. Allows dotnet sln add. -->
+    <!-- Properties needed to get the full sln working. -->
+    <!-- Allows dotnet sln add. -->
     <DefaultProjectTypeGuid Condition=" '$(DefaultProjectTypeGuid)' == '' ">{54a90642-561a-4bb1-a94e-469adee60c69}</DefaultProjectTypeGuid>
+    <!-- Allows dotnet add reference. Otherwise dotnet complains that esproj isn't compatible with net8.0. Not sure what the correct way to solve this is. -->
+    <TargetFrameworks>net8.0</TargetFrameworks>
   </PropertyGroup>
 </Project>
