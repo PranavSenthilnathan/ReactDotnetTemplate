@@ -1,0 +1,3 @@
+This repo contains a dotnet template to create a JavaScript project system (JSPS) project in `working/content`. This project is set up to integrate with a web api backend (proxy configs, certs, etc.), but does not actually create the web api project.
+
+This repo also contains a script `CreateCombinedSolution.ps1` which creates both a JSPS project and WebApi project and hooks them together. This script is what the combined template proposal intends to make into a first class template itself. I've included comments there which list some requirements fr the JSPS+WebApi combined template based on what the script is doing that would need to be ported to the template.
