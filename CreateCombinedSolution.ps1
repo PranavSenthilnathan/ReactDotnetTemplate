@@ -12,8 +12,8 @@ try {
     pushd $testAppDir
     try {
         # Asks for dotnet CLI in combined template proposal:
-        # - allow adding P2P reference in/to any of the subprojects
-        # - allow adding package references if there isn't already a way to do so
+        # - allow adding P2P reference in/to any of the subprojects (I think this can be done with postactions already)
+        # - allow adding package references if there isn't already a way to do so (I think this can either already be done in the template or a postaction?)
         # - top level variables passable into the subprojects (this is already in Chet's proposal). In our case we need this for ports.
 
         dotnet new sln
